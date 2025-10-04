@@ -1,12 +1,11 @@
 import HeroSlider from './components/HeroSlider'
 import TopProductsContainer from './components/TopProducts/TopProductsContainer'
-export default async function Home() {
-  const res = await fetch('http://localhost:3001/api/products/top', {
-    cache: 'no-store',
-  })
+export default function Home() {
+  // const baseURL = process.env.NEXT_PUBLIC_BASE_URL
+  // const res = await fetch(`${baseURL}/api/products/top`, { cache: 'no-store' })
 
-  const topProducts = await res.json()
-  console.log('Products are', topProducts)
+  // const topProducts = await res.json()
+  // console.log('Products are', topProducts)
   return (
     <div className='w-[94vw] mx-auto'>
       <HeroSlider />
