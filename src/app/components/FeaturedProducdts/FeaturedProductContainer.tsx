@@ -8,14 +8,14 @@ import { Navigation } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import ProductCard from '../ProductCard'
 
-type TopProductsContainerProps = {
+type FeaturedProductContainerProps = {
   products: Product[]
 }
 
-export default function TopProductsContainer({ products }: TopProductsContainerProps) {
+export default function FeaturedProductContainer({ products }: FeaturedProductContainerProps) {
   return (
     <div className='mt-6'>
-      <h2 className='text-2xl font-bold mb-4'>Top Products</h2>
+      <h2 className='text-2xl font-bold mb-4'>Featured Products</h2>
 
       <Swiper
         modules={[Navigation]}

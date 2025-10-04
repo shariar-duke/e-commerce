@@ -1,3 +1,4 @@
+import FeaturedProductContainer from './components/FeaturedProducdts/FeaturedProductContainer'
 import HeroSlider from './components/HeroSlider'
 import TopProductsContainer from './components/TopProducts/TopProductsContainer'
 export default async function Home() {
@@ -5,13 +6,17 @@ export default async function Home() {
   const res = await fetch(`${baseURL}/api/products/top`, { cache: 'no-store' })
 
   const topProducts = await res.json()
+
+  const featuredRes = await fetch(`${baseURL}/api/products/featured`, { cache: 'no-store' })
+  const featuredProducts = await featuredRes.json()
   console.log('Products are', topProducts)
   return (
     <div className='w-[94vw] mx-auto'>
       <HeroSlider />
 
-      <div className='mt-4'>
-        <TopProductsContainer />
+      <div className='mt-4 spacy-y-6'>
+        <TopProductsContainer products={topProducts} />
+        <FeaturedProductContainer products={featuredProducts} />
       </div>
     </div>
   )
