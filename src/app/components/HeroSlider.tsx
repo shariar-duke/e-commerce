@@ -9,7 +9,7 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 
 export default function HeroSlider() {
   return (
-    <div className='relative w-full h-[400px] sm:h-[500px] md:h-[600px] lg:h-[700px]'>
+    <div className='relative w-full h-[400px] sm:h-[500px] md:h-[500px]  2xl:h-[700px] mt-4'>
       <Swiper
         modules={[Autoplay, Pagination, EffectFade]}
         effect='fade'
@@ -18,7 +18,7 @@ export default function HeroSlider() {
         loop
         className='h-full'
       >
-        <SwiperSlide className='relative h-full'>
+        <SwiperSlide className='relative h-full rounded-2xl overflow-hidden'>
           <Image
             src='/images/slider1.jpg'
             alt='Hero Slide 1'
@@ -27,7 +27,7 @@ export default function HeroSlider() {
           />
         </SwiperSlide>
 
-        <SwiperSlide className='relative h-full'>
+        <SwiperSlide className='relative h-full rounded-2xl overflow-hidden'>
           <Image
             src='/images/slider2.jpg'
             alt='Hero Slide 2'
@@ -36,7 +36,7 @@ export default function HeroSlider() {
           />
         </SwiperSlide>
 
-        <SwiperSlide className='relative h-full'>
+        <SwiperSlide className='relative h-full rounded-2xl overflow-hidden'>
           <Image
             src='/images/slider3.jpg'
             alt='Hero Slide 3'
@@ -45,7 +45,7 @@ export default function HeroSlider() {
           />
         </SwiperSlide>
 
-        <SwiperSlide className='relative h-full'>
+        <SwiperSlide className='relative h-full rounded-2xl overflow-hidden'>
           <Image
             src='/images/slider4.jpg'
             alt='Hero Slide 4'
@@ -54,7 +54,7 @@ export default function HeroSlider() {
           />
         </SwiperSlide>
 
-        <SwiperSlide className='relative h-full'>
+        <SwiperSlide className='relative h-full rounded-2xl overflow-hidden'>
           <Image
             src='/images/slider5.jpg'
             alt='Hero Slide 5'

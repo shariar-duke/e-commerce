@@ -1,0 +1,296 @@
+[
+  {
+    "id": 1,
+    "name": "Men's Cotton Sweater",
+    "oldPrice": 1000,
+    "price": 800,
+    "category": "sweater",
+    "type": "featured",
+    "mainImg": "/images/product-img/product1.jpg",
+    "relatedImg": [
+      "/images/product-img/product11.jpg",
+      "/images/product-img/product12.jpg",
+      "/images/product-img/product13.jpg"
+    ],
+    "productDetails": "High-quality, durable, and stylish product made to meet your everyday needs.",
+    "productDescription": "Crafted with care and attention to detail, this product combines quality and comfort, making it perfect for daily use or gifting.",
+    "sizes": [
+      { "size": 32, "quantity": 10 },
+      { "size": 34, "quantity": 15 },
+      { "size": 36, "quantity": 8 },
+      { "size": 38, "quantity": 5 }
+    ]
+  },
+
+  {
+    "id": 2,
+    "name": "Gorgeous Sweater",
+    "oldPrice": 1000,
+    "price": 900,
+    "category": "sweater",
+    "type": "featured",
+    "mainImg": "/images/product-img/product6.jpg",
+    "relatedImg": [
+      "/images/product-img/product61.jpg",
+      "/images/product-img/product62.jpg",
+      "/images/product-img/product63.jpg"
+    ],
+    "productDetails": "High-quality, durable, and stylish product made to meet your everyday needs.",
+    "productDescription": "Crafted with care and attention to detail, this product combines quality and comfort, making it perfect for daily use or gifting.",
+    "sizes": [
+      { "size": 32, "quantity": 10 },
+      { "size": 34, "quantity": 15 },
+      { "size": 36, "quantity": 8 },
+      { "size": 38, "quantity": 5 }
+    ]
+  },
+
+  {
+    "id": 3,
+    "name": "Generic Metal Sweater",
+    "oldPrice": 1000,
+    "price": 900,
+    "category": "sweater",
+    "type": "featured",
+    "mainImg": "/images/product-img/product3.jpg",
+    "relatedImg": [
+      "/images/product-img/product31.jpg",
+      "/images/product-img/product32.jpg",
+      "/images/product-img/product34.jpg"
+    ],
+    "productDetails": "High-quality, durable, and stylish product made to meet your everyday needs.",
+    "productDescription": "Crafted with care and attention to detail, this product combines quality and comfort, making it perfect for daily use or gifting.",
+    "sizes": [
+      { "size": 32, "quantity": 10 },
+      { "size": 34, "quantity": 15 },
+      { "size": 36, "quantity": 8 },
+      { "size": 38, "quantity": 5 }
+    ]
+  },
+
+  {
+    "id": 4,
+    "name": "Cutton Panjabi",
+    "oldPrice": 1000,
+    "price": 900,
+    "category": "sweater",
+    "type": "featured",
+    "mainImg": "/images/product-img/product4.jpg",
+    "relatedImg": [
+      "/images/product-img/product41.jpg",
+      "/images/product-img/product43.jpg",
+      "/images/product-img/product44.jpg"
+    ],
+    "productDetails": "High-quality, durable, and stylish product made to meet your everyday needs.",
+    "productDescription": "Crafted with care and attention to detail, this product combines quality and comfort, making it perfect for daily use or gifting.",
+    "sizes": [
+      { "size": 32, "quantity": 10 },
+      { "size": 34, "quantity": 15 },
+      { "size": 36, "quantity": 8 },
+      { "size": 38, "quantity": 5 }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Handmade Rubber Tshirt",
+    "oldPrice": 1400,
+    "price": 900,
+    "category": "tshirt",
+    "type": "featured",
+    "mainImg": "/images/product-img/product51.jpg",
+    "relatedImg": [
+      "/images/product-img/product52.jpg",
+      "/images/product-img/product53.jpg",
+      "/images/product-img/product54.jpg"
+    ],
+    "productDetails": "High-quality, durable, and stylish product made to meet your everyday needs.",
+    "productDescription": "Crafted with care and attention to detail, this product combines quality and comfort, making it perfect for daily use or gifting.",
+    "sizes": [
+      { "size": 32, "quantity": 10 },
+      { "size": 34, "quantity": 15 },
+      { "size": 36, "quantity": 8 },
+      { "size": 38, "quantity": 5 }
+    ]
+  },
+
+  {
+    "id": 6,
+    "name": "Full Sleeve Rubber T-Shirt",
+    "oldPrice": 1300,
+    "price": 900,
+    "category": "tshirt",
+    "type": "featured",
+    "mainImg": "/images/product-img/product2.jpg",
+    "relatedImg": [
+      "/images/product-img/product21.jpg",
+      "/images/product-img/product23.jpg",
+      "/images/product-img/product24.jpg"
+    ],
+    "productDetails": "High-quality, durable, and stylish product made to meet your everyday needs.",
+    "productDescription": "Crafted with care and attention to detail, this product combines quality and comfort, making it perfect for daily use or gifting.",
+    "sizes": [
+      { "size": 32, "quantity": 10 },
+      { "size": 34, "quantity": 15 },
+      { "size": 36, "quantity": 8 },
+      { "size": 38, "quantity": 5 }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Fresh T-Shirt",
+    "oldPrice": 1000,
+    "price": 600,
+    "category": "tshirt",
+    "type": "top",
+    "mainImg": "/images/product-img/product74.jpg",
+    "relatedImg": [
+      "/images/product-img/product7.jpg",
+      "/images/product-img/product71.jpg",
+      "/images/product-img/product73.jpg"
+    ],
+    "productDetails": "High-quality, durable, and stylish product made to meet your everyday needs.",
+    "productDescription": "Crafted with care and attention to detail, this product combines quality and comfort, making it perfect for daily use or gifting.",
+    "sizes": [
+      { "size": 32, "quantity": 10 },
+      { "size": 34, "quantity": 15 },
+      { "size": 36, "quantity": 8 },
+      { "size": 38, "quantity": 5 }
+    ]
+  },
+
+  {
+    "id": 8,
+    "name": "Dropped Shoulder T-Shirt",
+    "oldPrice": 800,
+    "price": 600,
+    "category": "tshirt",
+    "type": "top",
+    "mainImg": "/images/product-img/product82.jpg",
+    "relatedImg": [
+      "/images/product-img/product81.jpg",
+      "/images/product-img/product8.jpg",
+      "/images/product-img/product84.jpg"
+    ],
+    "productDetails": "High-quality, durable, and stylish product made to meet your everyday needs.",
+    "productDescription": "Crafted with care and attention to detail, this product combines quality and comfort, making it perfect for daily use or gifting.",
+    "sizes": [
+      { "size": 32, "quantity": 10 },
+      { "size": 34, "quantity": 15 },
+      { "size": 36, "quantity": 8 },
+      { "size": 38, "quantity": 5 }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Polo T-Shirt",
+    "oldPrice": 900,
+    "price": 600,
+    "category": "tshirt",
+    "type": "top",
+    "mainImg": "/images/product-img/product9.jpg",
+    "relatedImg": [
+      "/images/product-img/product92.jpg",
+      "/images/product-img/product93.jpg",
+      "/images/product-img/product94.jpg"
+    ],
+    "productDetails": "High-quality, durable, and stylish product made to meet your everyday needs.",
+    "productDescription": "Crafted with care and attention to detail, this product combines quality and comfort, making it perfect for daily use or gifting.",
+    "sizes": [
+      { "size": 32, "quantity": 10 },
+      { "size": 34, "quantity": 15 },
+      { "size": 36, "quantity": 8 },
+      { "size": 38, "quantity": 5 }
+    ]
+  },
+
+  {
+    "id": 10,
+    "name": "Men's Metallic Pants",
+    "oldPrice": 850,
+    "price": 600,
+    "category": "pant",
+    "type": "top",
+    "mainImg": "/images/product-img/product104.jpg",
+    "relatedImg": [
+      "/images/product-img/product103.jpg",
+      "/images/product-img/product10.jpg",
+      "/images/product-img/product101.jpg"
+    ],
+    "productDetails": "High-quality, durable, and stylish product made to meet your everyday needs.",
+    "productDescription": "Crafted with care and attention to detail, this product combines quality and comfort, making it perfect for daily use or gifting.",
+    "sizes": [
+      { "size": 32, "quantity": 10 },
+      { "size": 34, "quantity": 15 },
+      { "size": 36, "quantity": 8 },
+      { "size": 38, "quantity": 5 }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Men's Hoodie",
+    "oldPrice": 700,
+    "price": 600,
+    "category": "sweater",
+    "type": "top",
+    "mainImg": "/images/product-img/product11.jpg",
+    "relatedImg": [
+      "/images/product-img/product111.jpg",
+      "/images/product-img/product113.jpg",
+      "/images/product-img/product114.jpg"
+    ],
+    "productDetails": "High-quality, durable, and stylish product made to meet your everyday needs.",
+    "productDescription": "Crafted with care and attention to detail, this product combines quality and comfort, making it perfect for daily use or gifting.",
+    "sizes": [
+      { "size": 32, "quantity": 10 },
+      { "size": 34, "quantity": 15 },
+      { "size": 36, "quantity": 8 },
+      { "size": 38, "quantity": 5 }
+    ]
+  },
+
+  {
+    "id": 12,
+    "name": "Men's Casual Hoodie",
+    "oldPrice": 950,
+    "price": 600,
+    "category": "sweater",
+    "type": "top",
+    "mainImg": "/images/product-img/product12.jpg",
+    "relatedImg": [
+      "/images/product-img/product121.jpg",
+      "/images/product-img/product123.jpg",
+      "/images/product-img/product124.jpg"
+    ],
+    "productDetails": "High-quality, durable, and stylish product made to meet your everyday needs.",
+    "productDescription": "Crafted with care and attention to detail, this product combines quality and comfort, making it perfect for daily use or gifting.",
+    "sizes": [
+      { "size": 32, "quantity": 10 },
+      { "size": 34, "quantity": 15 },
+      { "size": 36, "quantity": 8 },
+      { "size": 38, "quantity": 5 }
+    ]
+  },
+
+  {
+    "id": 13,
+    "name": "Comfort Fit Men's Hoodie",
+    "oldPrice": 900,
+    "price": 600,
+    "category": "sweater",
+    "type": "top",
+    "mainImg": "/images/product-img/product13.jpg",
+    "relatedImg": [
+      "/images/product-img/product131.jpg",
+      "/images/product-img/product132.jpg",
+      "/images/product-img/product133.jpg"
+    ],
+    "productDetails": "High-quality, durable, and stylish product made to meet your everyday needs.",
+    "productDescription": "Crafted with care and attention to detail, this product combines quality and comfort, making it perfect for daily use or gifting.",
+    "sizes": [
+      { "size": 32, "quantity": 10 },
+      { "size": 34, "quantity": 15 },
+      { "size": 36, "quantity": 8 },
+      { "size": 38, "quantity": 5 }
+    ]
+  }
+]

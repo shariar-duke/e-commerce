@@ -1,9 +1,3 @@
-import HeroSlider from '../components/HeroSlider'
-
 export default function page() {
-  return (
-    <div className='w-[94vw] mx-auto'>
-      <HeroSlider />
-    </div>
-  )
+  return <div className='w-[94vw] mx-auto'>demo page</div>
 }
