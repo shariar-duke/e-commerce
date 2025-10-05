@@ -1,7 +1,12 @@
+'use client'
 import { Product } from '@/app/lib/type'
+import { RootState } from '@/app/store'
 import { Heart, ShoppingCart } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useDispatch, useSelector } from 'react-redux'
+import type { AppDispatch } from '../store'
+import { addToCart } from '../store/features/cartSlice'
 
 type ProductCardProps = {
   product: Product
@@ -9,6 +14,18 @@ type ProductCardProps = {
 
 export default function ProductCard({ product }: ProductCardProps) {
   const { name, mainImg, id, price, oldPrice, category } = product
+
+  const dispatch = useDispatch<AppDispatch>()
+
+  const cartItems = useSelector((state: RootState) => state.cart.items)
+  const isInCart = cartItems.some((item) => item.id === id)
+
+  const handleAddToCart = () => {
+    console.log('This function is beign called')
+    dispatch(addToCart({ ...product, quantity: 1 }))
+
+    console.log('Is state updated')
+  }
 
   return (
     <article className='group relative flex h-full flex-col overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1'>
@@ -57,11 +74,23 @@ export default function ProductCard({ product }: ProductCardProps) {
           </button>
         </div>
 
-        <div className='absolute bottom-0 left-0 right-0 translate-y-full transition-transform duration-300 group-hover:translate-y-0'>
-          <button className='w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white py-3 font-semibold flex items-center justify-center gap-2 hover:from-blue-700 hover:to-blue-800 transition-all'>
-            <ShoppingCart className='w-5 h-5' />
-            Add to Cart
-          </button>
+        <div className='absolute bottom-0 left-0 right-0 translate-y-0 transition-transform duration-300'>
+          {isInCart ? (
+            <Link href='/cart'>
+              <button className='w-full cursor-pointer bg-gradient-to-r from-blue-600 to-blue-700 text-white py-3 font-semibold flex items-center justify-center gap-2 hover:from-blue-700 hover:to-blue-800 transition-all'>
+                <ShoppingCart className='w-5 h-5' />
+                View In Cart
+              </button>
+            </Link>
+          ) : (
+            <button
+              onClick={handleAddToCart}
+              className='w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white py-3 font-semibold flex items-center justify-center gap-2 hover:from-blue-700 hover:to-blue-800 transition-all'
+            >
+              <ShoppingCart className='w-5 h-5' />
+              Add to Cart
+            </button>
+          )}
         </div>
       </div>
 

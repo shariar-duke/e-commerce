@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from 'next/font/google'
 import NextTopLoader from 'nextjs-toploader'
 import Footer from './components/Footer'
 import Header from './components/Header'
+import ReduxProvider from './components/ReduxProvider'
 import './globals.css'
 
 const geistSans = Geist({
@@ -30,13 +31,15 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}
       >
-        <NextTopLoader showSpinner={false} height={3} color='#0000FF' />
+        <ReduxProvider>
+          <NextTopLoader showSpinner={false} height={3} color='#0000FF' />
 
-        <Header />
+          <Header />
 
-        <main className='flex-1'>{children}</main>
+          <main className='flex-1'>{children}</main>
 
-        <Footer />
+          <Footer />
+        </ReduxProvider>
       </body>
     </html>
   )

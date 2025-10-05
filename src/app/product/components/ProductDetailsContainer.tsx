@@ -1,5 +1,7 @@
 'use client'
 import { Product } from '@/app/lib/type'
+import { AppDispatch, RootState } from '@/app/store'
+import { addToCart } from '@/app/store/features/cartSlice'
 import {
   ChevronLeft,
   ChevronRight,
@@ -11,17 +13,23 @@ import {
   Truck,
 } from 'lucide-react'
 import Image from 'next/image'
+import Link from 'next/link'
 import { useState } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
 import ProductDetailsSection from './ProductDetailsSection'
 type ProductDetailsContainerProps = {
   product: Product
 }
 export default function ProductDetailsContainer({ product }: ProductDetailsContainerProps) {
   const [selectedImage, setSelectedImage] = useState(0)
-  const [quantity, setQuantity] = useState(1)
   const [selectedSize, setSelectedSize] = useState(32)
   const images = [product.mainImg, ...product.relatedImg]
   const sizes = product.sizes
+
+  const cartItems = useSelector((state: RootState) => state.cart.items)
+  const isInCart = cartItems.some((item) => item.id === product.id)
+
+  const dispatch = useDispatch<AppDispatch>()
 
   const handlePrevImage = () => {
     setSelectedImage((prev) => (prev === 0 ? images.length - 1 : prev - 1))
@@ -34,6 +42,13 @@ export default function ProductDetailsContainer({ product }: ProductDetailsConta
   const availableProduct = (size = 32) => {
     const selectedSize = product.sizes.find((item) => item.size === size)
     return selectedSize ? selectedSize.quantity : 0
+  }
+
+  const handleAddToCart = () => {
+    console.log('This function is beign called')
+    dispatch(addToCart({ ...product, quantity: 1 }))
+
+    console.log('Is state updated')
   }
 
   return (
@@ -145,10 +160,26 @@ export default function ProductDetailsContainer({ product }: ProductDetailsConta
             </div>
 
             <div className='flex gap-3 pt-4'>
-              <button className='cursor-pointer flex-1 bg-blue-900 text-white py-4 px-6 rounded-xl font-semibold hover:bg-blue-800 transition-all shadow-lg hover:shadow-xl flex items-center justify-center gap-2'>
-                <ShoppingCart className='w-5 h-5' />
-                Add to Cart
-              </button>
+              {isInCart ? (
+                <Link href='/cart' className='flex-1'>
+                  <button
+                    onClick={handleAddToCart}
+                    className='cursor-pointer w-full  bg-blue-900 text-white py-4 px-6 rounded-xl font-semibold hover:bg-blue-800 transition-all shadow-lg hover:shadow-xl flex items-center justify-center gap-2'
+                  >
+                    <ShoppingCart className='w-5 h-5' />
+                    View In Cart
+                  </button>
+                </Link>
+              ) : (
+                <button
+                  onClick={handleAddToCart}
+                  className='cursor-pointer flex-1 bg-blue-900 text-white py-4 px-6 rounded-xl font-semibold hover:bg-blue-800 transition-all shadow-lg hover:shadow-xl flex items-center justify-center gap-2'
+                >
+                  <ShoppingCart className='w-5 h-5' />
+                  Add to Cart
+                </button>
+              )}
+
               <button className='cursor-pointer bg-white border-2 border-blue-900 text-blue-900 p-4 rounded-xl hover:bg-blue-50 transition-all'>
                 <Heart className='w-6 h-6' />
               </button>
