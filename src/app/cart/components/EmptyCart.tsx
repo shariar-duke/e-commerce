@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function EmptyCart() {
   return (
@@ -15,6 +16,12 @@ export default function EmptyCart() {
         <p className='text-gray-600 text-sm max-w-xs'>
           Looks like you haven not added any products yet. Start shopping to fill your cart!
         </p>
+
+        <Link href='/'>
+          <button className='mt-4 bg-blue-600 text-white py-2 px-6 rounded-lg hover:bg-blue-700 transition-colors font-medium cursor-pointer'>
+            Back to Home
+          </button>
+        </Link>
       </div>
     </div>
   )

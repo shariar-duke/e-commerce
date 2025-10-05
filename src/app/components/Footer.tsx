@@ -6,7 +6,7 @@ export default function Footer() {
       <div className='max-w-screen-3xl mx-auto px-10'>
         <div className='flex flex-col md:flex-row justify-between border-b border-gray-300 pb-6'>
           <h2 className='text-2xl md:text-3xl font-extrabold bg-gradient-to-r from-blue-500 via-blue-400 to-blue-600 bg-clip-text text-transparent mb-4 md:mb-0'>
-            E-commerce
+            ShopNest
           </h2>
 
           <div className='flex flex-col md:text-right space-y-1 text-gray-600'>
