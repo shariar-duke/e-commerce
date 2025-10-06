@@ -30,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen bg-white text-black`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen bg-[#ffffff] text-black`}
       >
         <ReduxProvider>
           <Toaster position='top-center' reverseOrder={false} />
@@ -38,7 +38,7 @@ export default function RootLayout({
 
           <Header />
 
-          <main className='flex-1'>{children}</main>
+          <main className='flex-1 bg-[#ffffff] text-black'>{children}</main>
 
           <Footer />
         </ReduxProvider>
