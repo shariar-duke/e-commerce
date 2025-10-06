@@ -11,7 +11,7 @@ To run this project locally:
 
 1. Clone the repository:
    ```bash
-   https://github.com/shariar-duke/e-commerce/edit/main
+   https://github.com/shariar-duke/e-commerce
 
 2. nstall dependencies:
    cd e-commerce
