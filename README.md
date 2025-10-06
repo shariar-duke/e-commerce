@@ -17,9 +17,9 @@ To run this project locally:
    cd e-commerce
    npm install
 
-3. Create a .env.local file and keep there a variable with value 
-  NEXT_PUBLIC_BASE_URL= http://localhost:3000
+3. Create a `.env.local` file in the root of your project and add the following:
 
+NEXT_PUBLIC_BASE_URL=http://localhost:3000
 
 
 4.Local Link 
