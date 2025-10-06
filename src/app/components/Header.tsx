@@ -47,14 +47,14 @@ export default function Header() {
 
   return (
     <header className='sticky top-0 z-50 bg-white shadow-md'>
-      <div className='w-full md:w-[94vw] mx-auto flex flex-wrap items-center justify-between px-4 py-4 gap-4'>
+      <div className='w-full md:w-[94vw] mx-auto flex flex-wrap items-center justify-between px-4 py-4 gap-4 '>
         <Link href='/' className='flex-shrink-0'>
-          <h2 className='text-2xl md:text-3xl font-extrabold bg-gradient-to-r from-blue-500 via-blue-400 to-blue-600 bg-clip-text text-transparent'>
+          <h2 className='text-xl md:text-3xl font-extrabold bg-gradient-to-r from-blue-500 via-blue-400 to-blue-600 bg-clip-text text-transparent'>
             ShopNest
           </h2>
         </Link>
 
-        <div className='flex-1 min-w-[200px] max-w-xl lg:max-w-2xl relative'>
+        <div className='flex-1 min-w-[100px] max-w-xl lg:max-w-2xl relative'>
           <Search className='absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400' />
           <input
             type='text'
@@ -104,7 +104,7 @@ export default function Header() {
           )}
         </div>
 
-        <nav className='flex flex-wrap items-center gap-4'>
+        <nav className='flex  items-center gap-4  '>
           <Link
             href='#'
             className='text-gray-700 hover:text-blue-600 font-medium transition-colors hidden md:block'
