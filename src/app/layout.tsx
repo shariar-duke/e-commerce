@@ -41,7 +41,7 @@ export default function RootLayout({
 
           <Header />
 
-          <main className='flex-1 bg-[#ffffff] text-black'>{children}</main>
+          <main className='flex-1 bg-[#ffffff] text-black pb-6'>{children}</main>
 
           <Footer />
         </ReduxProvider>

@@ -22,7 +22,7 @@ export default async function ProductDetailsPage({ params }: { params: Promise<{
   console.log('related prducts are', relatedProducts)
 
   return (
-    <div className='w-[94vw] mx-auto mt-4'>
+    <div className='w-[94vw] mx-auto mt-4 bg-[#ffffff]'>
       <ProductDetailsContainer product={product} />
 
       <RelatedRroduct relatedProducts={relatedProducts} />

@@ -66,7 +66,7 @@ export default function CustomModal() {
                 <input
                   {...register('name')}
                   placeholder='Full Name'
-                  className='border border-gray-300 rounded-md w-full px-4 py-3 text-lg focus:outline-none focus:ring-2 focus:ring-blue-500'
+                  className='border border-gray-300 rounded-md w-full px-4 py-3 text-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-400  dark:text-gray-400'
                 />
                 {errors.name && <p className='text-red-500 text-sm mt-1'>{errors.name.message}</p>}
               </div>
@@ -75,7 +75,7 @@ export default function CustomModal() {
                 <input
                   {...register('email')}
                   placeholder='Email Address'
-                  className='border border-gray-300 rounded-md w-full px-4 py-3 text-lg focus:outline-none focus:ring-2 focus:ring-blue-500'
+                  className='border border-gray-300 rounded-md w-full px-4 py-3 text-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-400  dark:text-gray-400'
                 />
                 {errors.email && (
                   <p className='text-red-500 text-sm mt-1'>{errors.email.message}</p>
@@ -87,7 +87,7 @@ export default function CustomModal() {
                   type='password'
                   {...register('password')}
                   placeholder='Password'
-                  className='border border-gray-300 rounded-md w-full px-4 py-3 text-lg focus:outline-none focus:ring-2 focus:ring-blue-500'
+                  className='border border-gray-300 rounded-md w-full px-4 py-3 text-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-400  dark:text-gray-400'
                 />
                 {errors.password && (
                   <p className='text-red-500 text-sm mt-1'>{errors.password.message}</p>

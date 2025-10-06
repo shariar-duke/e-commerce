@@ -14,7 +14,7 @@ export default async function Home() {
 
   // console.log('Product', topProducts)
   return (
-    <div className='w-[94vw] mx-auto'>
+    <div className='w-[94vw] mx-auto bg-[#ffffff]'>
       <HeroSlider />
 
       <div className='mt-4 spacy-y-6'>
