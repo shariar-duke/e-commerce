@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import { Product } from '../lib/type'
 import CartItem from './CartItem'
+import CustomModal from './CustomModal'
 
 export default function Header() {
   const categories = [
@@ -110,13 +111,7 @@ export default function Header() {
           >
             Shop
           </Link>
-          <Link
-            href='#'
-            className='text-gray-700 hover:text-blue-600 font-medium transition-colors hidden md:block'
-          >
-            About
-          </Link>
-
+          <CustomModal />
           <CartItem />
         </nav>
       </div>

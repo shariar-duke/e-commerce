@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
 import NextTopLoader from 'nextjs-toploader'
+import { Toaster } from 'react-hot-toast'
 import Footer from './components/Footer'
 import Header from './components/Header'
 import ReduxProvider from './components/ReduxProvider'
@@ -32,6 +33,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}
       >
         <ReduxProvider>
+          <Toaster position='top-center' reverseOrder={false} />
           <NextTopLoader showSpinner={false} height={3} color='#0000FF' />
 
           <Header />
