@@ -17,13 +17,12 @@ To run this project locally:
    cd e-commerce
    npm install
 
-3. Create a .env.local file and keep there a variable called 
-  NEXT_PUBLIC_BASE_URL= 
-
-4. The value will be 
+3. Create a .env.local file and keep there a variable with value 
   NEXT_PUBLIC_BASE_URL= http://localhost:3000
 
-5.Local Link 
+
+
+4.Local Link 
  http://localhost:3000
   
 
