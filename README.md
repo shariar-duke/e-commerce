@@ -19,7 +19,7 @@ To run this project locally:
 
 3. Create a `.env.local` file in the root of your project and add the following:
 
-NEXT_PUBLIC_BASE_URL=http://localhost:3000
+   NEXT_PUBLIC_BASE_URL=http://localhost:3000
 
 
 4.Local Link 
